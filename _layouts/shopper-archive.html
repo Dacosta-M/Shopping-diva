@@ -1,0 +1,15 @@
+--- 
+layout: default 
+---
+
+<h1>Shoppers</h1>
+
+<ul>
+    {% for shopper in site.shoppers %}
+    <li>
+        <h2>{{ shopper.name }}</h2>
+        <h3>{{ shopper.position }}</h3>
+        <p>{{ content }}</p>
+    </li>
+    {% endfor %}
+</ul>

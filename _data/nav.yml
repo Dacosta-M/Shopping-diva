@@ -1,0 +1,12 @@
+
+headernav:
+- name: Home
+  link: /
+- name: About
+  link: /about/
+- name: posts
+  link: /posts/
+- name: Shoppers
+  link: /shoppers/
+
+footernav:

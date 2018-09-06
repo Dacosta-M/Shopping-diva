@@ -1,0 +1,68 @@
+# Site settings
+title: Shopping Diva
+shortname: Sdiva
+abbrev: sd
+email: motunrayodacosta@gmail.com
+twitter: motuncosta
+description: >- # this means to ignore newlines until "baseurl:"
+  Meeting and satisfying your stocking and shopping needs 
+baseurl: ""
+url: "https://shoppingdiva.com"
+twitter_username: motuncosta
+github_username:  Dacosta-M
+language: 'en'
+
+
+# Build settings
+markdown: kramdown
+highlighter: true
+
+collections:
+  uploads:
+    title: Uploads (Media & Files)
+  posts:
+    title:  Stories from the Field
+    output: true
+    permalink: /:collection/:name/
+  shoppers:
+    title: Our Shoppers
+    output: true
+    permalink: /:collection/:name/
+  categories:
+    title: Categories of topics
+    output: true
+    permalink: /:collection/:name/
+    
+defaults:
+  - scope:
+      path: ""
+      type: "Shoppers"
+    values:
+      layout: "single-shopper"
+  - scope:
+      type: "posts"
+    values:
+      layout: "single-story"
+  - scope:
+    values:
+      layout: "default"
+
+# Handling Sass
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Include folders
+include:
+  - _pages
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .gitignore
